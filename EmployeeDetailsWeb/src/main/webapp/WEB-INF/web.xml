@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>EmployeeDetailsWeb</display-name>
+  <servlet>
+  <servlet-name>Employee</servlet-name>
+  <servlet-class>com.employee.EmployeeRecordFetch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Employee</servlet-name>
+  <url-pattern>/employee</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>URL</param-name>
+  <param-value>jdbc:oracle:thin:@KumarKalyan:1521:xe</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>Driver</param-name>
+  <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>username</param-name>
+  <param-value>SYSTEM</param-value>
+  </context-param>
+  
+  <context-param>
+  <param-name>password</param-name>
+  <param-value>7890poiu</param-value>
+  </context-param>
+  
+</web-app>
